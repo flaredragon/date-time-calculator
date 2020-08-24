@@ -22,7 +22,7 @@ public class History implements Serializable {
 	private String operation;
 	private String input;
 	private String result;
-	private static Queue<History> history  = new CircularFifoQueue<History>(100);
+	private static ArrayList<History> history  = new ArrayList<History>();
 	
 	public History(String operation,String input, String result){
 		super();

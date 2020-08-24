@@ -20,6 +20,9 @@ public class DateTime {
 	public LocalDate get() {
 		return localDate;
 	}
+	public String getDayOfWeek() {
+		return localDate.getDayOfWeek().toString();
+	}
 	public void set(String date){
 		LocalDate localDateNew = LocalDate.parse(date,
 	            DateTimeFormatter.ofPattern("dd-LL-yyyy"));
